@@ -5,10 +5,12 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.briones.ejercicio.models.dao.ISemestre;
 import com.briones.ejercicio.models.entities.Semestre;
 
+@Service
 public class SemestreService implements ISemestreService {
 	
 	@Autowired

@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.briones.ejercicio.models.entities.Alumno;
 import com.briones.ejercicio.models.services.IAlumnoService;
 
+
+
 @Controller
 @RequestMapping(value="/alumno")  
 public class AlumnoController {	
@@ -26,7 +28,7 @@ public class AlumnoController {
 	//a traves de una URL (puede ser -> 1. Escrita en el navegador
 	//2. Puede sr Hyperlink, 3. Puede ser un action de un Form)
 	
-	@GetMapping(value="/create") //https://localhost:8080/alumno/create
+	@GetMapping(value="/create") //https://localhost:8084/alumno/create
 	public String create(Model model) {
 		Alumno alumno = new Alumno();
 		model.addAttribute("title", "Registro de nuevo alumn@");
@@ -69,6 +71,8 @@ public class AlumnoController {
 		srvAlumno.save(alumno);
 		return "redirect:/alumno/list";
 	}
-		
+	
+	
+	
 
 }

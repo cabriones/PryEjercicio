@@ -50,6 +50,5 @@ public class Alumno extends Persona implements Serializable {
 	public String toString() {
 		return super.toString();
 	}
-
+	
 }
-

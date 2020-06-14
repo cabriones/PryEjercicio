@@ -52,7 +52,7 @@ public class MateriaController {
 	@GetMapping(value="/list")
 	public String list(Model model) {
 		List<Materia> materias = srvMateria.findAll();
-		model.addAttribute("materia", materias);
+		model.addAttribute("materias", materias);
 		model.addAttribute("title", "Listado de materias");
 		return "materia/list";
 	}

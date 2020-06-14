@@ -12,7 +12,7 @@ import com.briones.ejercicio.models.entities.Alumno;
 @Service
 public class AlumnoService implements IAlumnoService {
 	
-	@Autowired 
+	@Autowired
 	private IAlumno dao;
 		
 	@Override

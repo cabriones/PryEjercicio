@@ -5,10 +5,12 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.briones.ejercicio.models.dao.IMatricula;
 import com.briones.ejercicio.models.entities.Matricula;
 
+@Service
 public class MatriculaService implements IMatriculaService {
 	
 	@Autowired 
